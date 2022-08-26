@@ -2,53 +2,45 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <layoutSections>
         <customLabel>false</customLabel>
-        <detailHeading>false</detailHeading>
+        <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
+        <label>Information</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>StartTime</field>
+                <field>CartId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Status</field>
+                <field>RelatedEntityId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>BackgroundOperationId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Type</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Level</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>ServiceTerritoryId</field>
+                <field>Message</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>TimeSlotType</field>
+                <behavior>Edit</behavior>
+                <field>IsDismissed</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>EndTime</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>WorkTypeGroupId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ServiceResourceId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Label</field>
-            </layoutItems>
-        </layoutColumns>
-        <style>TwoColumnsLeftToRight</style>
+        <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
-        <label>Custom Links</label>
-        <layoutColumns/>
-        <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
